@@ -6,13 +6,14 @@ class Song
 
   def initialize(name)
     @name = name
-    @artist = nil
+  #  @artist = nil
   end
 
   def artist_name
-    self.artist.name
+    if self.artist == nil
+      nil
+    else self.artist.name
     #binding.pry
   end
-
 
 end
