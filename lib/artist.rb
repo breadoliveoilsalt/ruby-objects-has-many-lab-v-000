@@ -1,3 +1,5 @@
+require 'pry'
+
 class Artist
 
   @@song_count = [ ]
@@ -22,6 +24,7 @@ class Artist
     # s.name = name - this seems unnecessary -- Song.new(name) should set the name
     @@song_count << s
     s
+    binding.pry
   end
 
   def self.song_count
