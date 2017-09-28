@@ -22,6 +22,7 @@ class Artist
     s = Song.new(name)
     s.artist = self
     # s.name = name - this seems unnecessary -- Song.new(name) should set the name
+    @songs << s
     @@song_count << s
     s
     binding.pry
