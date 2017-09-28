@@ -6,11 +6,12 @@ class Song
 
   def initialize(name)
     @name = name
+    @artist = nil
   end
 
   def artist_name
-    self.artist.name || nil
-    binding.pry
+    self.artist.name 
+    #binding.pry
   end
 
 
